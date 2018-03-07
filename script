@@ -1,0 +1,18 @@
+#!/bin/bash
+#comment
+#testing variables
+dir="/Users/arthur"
+if [ -e $dir ]
+then
+cd $dir
+ls
+fi
+
+
+
+
+
+
+
+
+
