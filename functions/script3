@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function helloworld() {
+	read -p "Enter value: " value
+	return $(( $value + 10 ))
+}
+helloworld
+echo $?
+
+
+
+
+

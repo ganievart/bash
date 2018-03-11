@@ -1,0 +1,12 @@
+#!/bin/bash
+
+function helloworld() {
+	echo "hello"
+}
+
+for (( count=1; count<5; count++ ))
+do
+helloworld
+done
+
+
