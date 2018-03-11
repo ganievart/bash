@@ -1,0 +1,21 @@
+#!/bin/bash
+trap "echo 'Trapped signal'" EXIT
+echo "Test script"
+count=1
+while [ $count -le 5 ]
+do
+echo "#Loop $count"
+sleep 1
+count=$(( $count+1 ))
+done
+trap -- EXIT
+echo 'Removed trap'
+count=1
+while [ $count -le 5 ]
+do
+echo "#Loop $count"
+sleep 1
+count=$(( $count+1 ))
+done
+
+
